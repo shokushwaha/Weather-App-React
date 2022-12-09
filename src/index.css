@@ -1,0 +1,136 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+.app {
+  position: relative;
+  background-color: rgba(0,0,0,0.4);
+  color: #fff;
+}
+
+.app:before {
+  content: '';
+  background: url('./imgs/mountains.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.app .search_bar {
+  text-align: center;
+  padding: 2rem;
+}
+.location p{
+  text-shadow: 4px 4px 10px azure,8px 8px 10px black;
+  font-family: cursive;
+  font-size: 4rem;
+
+}
+.app input {
+  padding: .7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border: 1px solid rgba(255,255,255, 0.8);
+  background: rgba(255,255,255, 0.1);
+  color: #f8f8f8;
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+.app input:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0px 0px 40px whitesmoke;
+
+  border-radius: 10px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition-duration: 400ms;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.container {
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.app .top_box {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.app .description {
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+  transform: rotate(90deg);
+  text-decoration: dotted;
+  font-weight: 900;
+  font-family: monospace;
+  font-size: 4rem;
+  text-shadow: 10px 10px 40px blue ;
+width: 100px;
+text-align: center;
+background-color: ghostwhite;
+color: black; 
+border-radius: 4px;
+box-shadow: 0px 0px 40px black;
+}
+
+.app .bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 2rem;
+  background-color: rgb(61, 179, 185);
+  margin-bottom: 200px;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0px 0px 40px whitesmoke;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
+
+
+
+
+
